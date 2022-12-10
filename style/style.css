@@ -1,0 +1,173 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    font-size: 62.5%;
+
+    --ff-primary: 'Roboto','sans-serif';
+    --text-color:#ffffff;
+
+    --hue:194;
+    --primary-color:hsl(var(--hue),100%,63%);
+    --secondary-color:#06181C;
+}
+
+body {
+    font-size: 1.6rem;
+    color:var(--text-color);
+    background-color: rgb(250, 254, 255);
+    background-color:black;
+}
+
+body * {
+    font-family: var(--ff-primary);
+}
+
+.sr-only {
+    position:absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    white-space: nowrap;
+    border-width:0;
+}
+
+#app {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.4rem 0;
+    width:1120px;
+}
+
+header h1 {
+    font-size: 2rem;
+    gap:8px;
+}
+
+.search {
+   display: flex;
+   align-items: center; 
+   gap:8px
+}
+
+.search input {
+    height: 4.8rem;
+    width: 46.2rem;
+    border:0px solid #ccc;
+    border-radius: .4rem .4rem .4rem .4rem;
+    padding: 0 .8rem;
+    background-color: var(--secondary-color);
+}
+
+.search button {
+    background-color:#065E7C;
+    color:var(--text-color);
+    border-radius: .4rem .4rem .4rem .4rem;
+    height: 4.8rem;
+    font-size: 1.4rem;
+    border: none;
+    padding:  0 3.2rem;
+    cursor:pointer;
+    text-transform: uppercase;
+    
+}
+
+
+
+.search button:hover {
+    filter:brightness(1.1)
+}
+
+table{
+    width: 104%;
+    border-collapse: collapse;
+    box-shadow: 0 1rem 2rem -1rem  #065E7C;
+
+   
+}
+
+table * {
+    font-size: 1.4rem;
+    color:var(--text-color);
+   
+    
+}
+
+table th {
+    background:#092D38;
+    text-align: left;
+    font-weight: normal;
+    padding: 1.5rem;
+}
+
+table th:first-child{
+    
+    border-top-left-radius: .8rem;
+
+}
+
+table th:last-child{
+    
+    border-top-right-radius: .8rem;
+    
+    
+    /**/
+}
+
+table tr:nth-child(odd){
+    background: rgba(0, 1, 2, 0.5);
+}
+
+table tr {
+    
+    background:#011114;
+}
+
+table td {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+td.user {
+    display:flex;
+    align-items: center;
+    gap:1rem;
+}
+
+td.user a {
+    text-decoration: none;
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+td .remove {
+    background: none;
+    border: none;
+    color:red;
+
+    cursor:pointer;
+}
+
+td.user img {
+    width:5rem;
+    height: 5rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
